@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hoàng Phú shop</title>
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!-- start header -->
+    <header class="hp-header" id="hp-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="hp-header-top">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="hp-header-top-area">
+                                        <div class="hp-header-top-right">
+                                            <ul class="hp-head-top-nav-right">
+                                                <li class="hidden-xs"><a href="./favorite.html">Wishlist</a></li>
+                                                <li class="hidden-xs"><a href="./shoppingCart.html">My Cart</a></li>
+                                                <li class="hidden-xs"><a href="#"><span class="fa fa-phone"></span> 0961737100</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <nav class="navbar navbar-expand-md navbar-light bg-light" id="header-nav">
+                        <a class="navbar-brand" href="#"><img src="../Images/logohoangphu.png" alt=""
+                                class="img-responsive"></a>
+                        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                            data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse hp-header-search ml-auto" id="collapsibleNavId">
+                            <div id="form-inline-top" class="form-inline my-2 my-lg-0 ml-auto">
+                                <button class="btn btn-outline-danger mr-sm-2" data-toggle="modal"
+                                    data-target="#modalLogIn">Đăng nhập</button>
+                                <div class="modal fade" id="modalLogIn" data-backdrop="false">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4>Đăng nhập</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                            <form id="hp-form-login">
+                                                                <div class="form-group row">
+                                                                    <label for="email" class="col-md-4 offset-2">Địa chỉ
+                                                                        Email
+                                                                    </label>
+                                                                    <div class="col-md-6">
+                                                                        <input type="email" id="form-input-email-dn" class="form-control"
+                                                                            id="exampleInputEmail1"
+                                                                            aria-describedby="emailHelp"
+                                                                            placeholder="Enter email">
+                                                                        <span id="er4" style="color:red"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <label for="exampleInputPassword1"
+                                                                        class="col-md-4 offset-2">Mật khẩu</label>
+                                                                    <div class="col-md-6">
+                                                                        <input type="password" id="form-input-password-dn" class="form-control"
+                                                                            id="exampleInputPassword1"
+                                                                            placeholder="Password">
+                                                                        <span id="er5" style="color:red"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-check row">
+                                                                    <div class="col-md-1 offset-md-2">
+                                                                        <input type="checkbox" class="form-check-input"
+                                                                            id="exampleCheck1">
+                                                                    </div>
+                                                                    <label class="form-check-label"
+                                                                        style="text-align : left" for="exampleCheck1">Ghi
+                                                                        nhớ</label>
+                                                                </div>
+                                                                <div class="row">
+                                                                    
+                                                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                                        <p id="confirm-form-dn"></p>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                                <a type="button" id="form-input-dn" class="btn btn-primary">Đăng nhập</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-outline-success my-2 my-sm-0" href="./account.html">Đăng ký</a>
+                            </div>
+                            <div class="header-shopping-card mr-3 ml-auto">
+                                <i class="fas fa-heart"></i>
+                                <p data-toggle="modal" data-target="modal-cart">Yêu thích <span class="badge badge-danger"
+                                        id="favorite-tag">0</span></p>
+                                <div class="modal" id="modal-cart" role="dialog" data-backdrop="false">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div id="box-favorite"
+                                                            class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer" id="box-footer-modal">
+                                                <a href="./favorite.html" class="">Xem tất cả</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-shopping-card">
+                                <i class="fas fa-shopping-cart"></i>
+                                <!-- <i><img src="./shopping-cart-solid.svg" alt=""></i> -->
+                                <p>Giỏ hàng <span class="badge badge-info" id="shoppingCart-tag">0</span></p>
+                                <div class="modal" id="modal-cart" role="dialog" data-backdrop="false">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div id="box-shopping-cart"
+                                                            class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer" id="box-footer-modal">
+                                                <a href="./shoppingCart.html" class="">Xem tất cả </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start nav menu -->
+    <section class="hp-nav" id="hp-nav">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <ul class="nav justify-content-center" id="nav-menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productman.html">MAN</a>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productwoman.html">WOMAN</a>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productkid.html">KID</a>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productsport.html">ACCESSORIES</a>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactUs.html">CONTACT US</a>
+                            </a>
+                        </li><li class="nav-item">
+                            <a class="nav-link" href="./aboutUs.html">ABOUT US</a>
+                            </a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end nav menu -->
+    <section id="favoritePage">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <table class="table" id="table-box-favorite">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Tên sản phẩm</th>
+                                <th>Giá</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ndTable">
+
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <!-- start support -->
+    <section class="hp-support">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="hp-support-single">
+                                    <span class="fa fa-truck"></span>
+                                    <h4>FREE SHIPPING</h4>
+                                    <P>Giao miễn phí cho khách hàng nằm trong phạm vi Thành phố Hồ Chí Minh.</P>
+                                </div>
+                            </div>
+                            <!-- single support -->
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="hp-support-single">
+                                    <span class="fa fa-clock"></span>
+                                    <h4>7 DAYS MONEY BACK</h4>
+                                    <P>Được hoàn tiền trong vòng 7 ngày cho khách hàng không ưng ý sản phẩm</P>
+                                </div>
+                            </div>
+                            <!-- single support -->
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="hp-support-single">
+                                    <span class="fa fa-phone"></span>
+                                    <h4>SUPPORT 24/7</h4>
+                                    <P>Luôn có người trực hỗ trợ bên đường dây nóng 24/24</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end support -->
+
+    <!-- start Subscribe -->
+    <section class="hp-subscribe">
+        <div class="container">
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="row text-center">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h3>Subscribe our newsletter </h3>
+                        <p>Subscribe để nhận những thông tin khuyễn mãi mới nhất !</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 offset-md-4">
+                        <form class="form-inline">
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Enter your email"
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-danger" type="button">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- / end subscribe -->
+
+    <!-- start footer -->
+    <footer class="hp-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="hp-footer-top-area">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="hp-footer-widget">
+                                    <h5>Hoàng Phú Shop</h5>
+                                    <ul class="hp-footer-nav">
+                                        <li><a href="./aboutUs.html">Giới thiệu</a></li>
+                                        <li><a href="./contactUs.html">Liên hệ</a></li>
+                                        <li><a href="#">Tuyển dụng</a></li>
+                                        <li><a href="#">Hệ thống cửa hàng</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="hp-footer-widget">
+                                    <div class="hp-footer-widget">
+                                        <h5>Hỗ trợ khách hàng</h5>
+                                        <ul class="hp-footer-nav">
+                                            <li><a href="#">Hưỡng dẫn mua hàng</a></li>
+                                            <li><a href="#">Hưỡng dẫn đổi trả hàng</a></li>
+                                            <li><a href="#">Câu hỏi thường gặp ?</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="hp-footer-widget">
+                                    <div class="hp-footer-widget">
+                                        <h5>Dịch vụ</h5>
+                                        <ul class="hp-footer-nav">
+                                            <li><a href="#">Discovery</a></li>
+                                            <li><a href="#">Tin tức</a></li>
+                                            <li><a href="#">Khuyễn mãi</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="hp-footer-widget">
+                                    <div class="hp-footer-widget">
+                                        <h5>Contact Us</h5>
+                                        <address>
+                                            <p> 12 Nguyễn Văn Bảo, Gò Vấp, Việt Nam</p>
+                                            <p><span class="fa fa-phone"></span> 0961737100</p>
+                                            <p><span class="fa fa-envelope"></span>hoangphustore@gmail.com</p>
+                                        </address>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <div class="scrollNav" id="scrollNav">
+        <ul class="list-group">
+            <li class="list-group-item">Nam</li>
+            <li class="list-group-item">Nu</li>
+            <li class="list-group-item">Tre em</li>
+            <li class="list-group-item">The thao</li>
+        </ul>
+    </div>
+    <div id="scrollTop" class="scrollToTop">
+        <i class="fa fa-chevron-up"></i>
+    </div>
+
+    <script src="../js/jquery-3.4.0.min.js" type="text/javascript"></script>
+    <script src="../js/fontawesome.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/all.js"></script>
+    <script src="../js/favoritecustom.js" type="text/javascript"></script>
+    <script>
+    </script>
+</body>
+
+</html>

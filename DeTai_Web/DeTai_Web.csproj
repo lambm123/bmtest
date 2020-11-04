@@ -1,0 +1,414 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B277DD72-A71A-4891-A964-D1C2050D4CA1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DeTai_Web</RootNamespace>
+    <AssemblyName>DeTai_Web</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44382</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap-grid.css" />
+    <Content Include="css\bootstrap-grid.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\style.css" />
+    <Content Include="html\aboutUs.html" />
+    <Content Include="html\account.html" />
+    <Content Include="html\contactUs.html" />
+    <Content Include="html\favorite.html" />
+    <Content Include="html\index.html" />
+    <Content Include="html\productkid.html" />
+    <Content Include="html\productman.html" />
+    <Content Include="html\productsport.html" />
+    <Content Include="html\productwoman.html" />
+    <Content Include="html\shoppingCart.html" />
+    <Content Include="images\banner\1.jpg" />
+    <Content Include="images\comment\76e69c4952a8884941b63eda951708b4_tn.jpg" />
+    <Content Include="images\comment\7db6337eae773532b4613a467dc8c21d_tn.jpg" />
+    <Content Include="images\comment\bc64530d078776a06112c1d23f0545df_tn.jpg" />
+    <Content Include="images\comment\c461ff336086602bcca1a825037d7348_tn.jpg" />
+    <Content Include="images\comment\ce4f444fda06a10e814c0cfed978577a_tn.jpg" />
+    <Content Include="images\logoLam.png" />
+    <Content Include="images\mu\ANTI-SOCIAL-SOCIAL-CLUB-CAP-IN-WHITE-NK350%28100k%29.jpg" />
+    <Content Include="images\mu\CAP-IN-WHITE-NK362%28100k%29.jpg" />
+    <Content Include="images\mu\CONVERSE-CAP-IN-RED-NK353%28100k%29.jpg" />
+    <Content Include="images\mu\DICKIES-CAP-IN-WHITE-NK348%28100k%29.jpg" />
+    <Content Include="images\mu\FILA-CAP-IN-BLACK-NK345%28100k%29.jpg" />
+    <Content Include="images\mu\FILA-CAP-IN-WHITE-NK346%28100k%29.jpg" />
+    <Content Include="images\mu\JORDAN-CAP-IN-BLACK-NK373%28100k%29.jpg" />
+    <Content Include="images\mu\LACOSTE-CAP-IN-GREEN-NK376%28100k%29.jpg" />
+    <Content Include="images\mu\MONLER-CAP-IN-BLUE-NK358%28100k%29.jpg" />
+    <Content Include="images\mu\NFL-CAP-IN-GREEN-NK379%28100k%29.jpg" />
+    <Content Include="images\mu\NY-CAP-IN-WHITE-NK344%28100k%29.jpg" />
+    <Content Include="images\mu\OLYMPIC-CAP-IN-BLACK-NK38%28100k%29.jpg" />
+    <Content Include="images\mu\OLYMPIC-CAP-IN-BLACK-NK386%28100k%29.jpg" />
+    <Content Include="images\mu\OLYMPIC-CAP-IN-WHITE-NK385%28100k%29.jpg" />
+    <Content Include="images\mu\OLYMPIC-CAP-IN-WHITE-NK387%28100k%29.jpg" />
+    <Content Include="images\mu\POLO-CAP-IN-ORANGE-NK368%28100k%29.jpg" />
+    <Content Include="images\mu\REDSKINS-CAP-IN-GREEN-NK372.jpg" />
+    <Content Include="images\mu\RODEO-CAP-IN-BLACK-NK380%28100k%29.jpg" />
+    <Content Include="images\mu\RODEO-CAP-IN-RED-NK381%28100k%29.jpg" />
+    <Content Include="images\mu\THE-NORTH-FACE-CAP-IN-RED-NK378%28100k%29.jpg" />
+    <Content Include="images\nam\1.jpg" />
+    <Content Include="images\nam\2.jpg" />
+    <Content Include="images\nam\3.jpg" />
+    <Content Include="images\nam\4.jpg" />
+    <Content Include="images\nam\5.jpg" />
+    <Content Include="images\nam\ao\Ao-So-Mi-FreeSize-Nam-K730%28180k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-thun-co-tron-ATT-3248%28180k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-Thun-Nam-Freesize-Soc-StripedShirt%28160k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-Thun-Nam-Ma-Bu-3-Lo-H02%28145k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-Thun-Nam-Ma-Bu-Basi- BN03%28150k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-Thun-Nam-Ma-Bu-Basic-BN02%28150k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-Thun-Nam-Ma-Bu-Basic-BN03%28150k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-Thun-Nam-Ma-Bu-Basic-BO02%28150k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-Thun-Nam-Ma-Bu-Basic-BO029%28120k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-Thun-Nam-Ma-Bu-Basic-BO029120k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-Thun-Nam-Ma-Bu-Basic-C02%28165k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-Thun-Nam-Ma-Bu-Basic-CA01%28150k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-Thun-Nam-Ma-Bu-Basic-CA01%28185k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-Thun-Nam-Ma-Bu-Basic-ST26%28150k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-Thun-Nam-Ma-Bu-Basic-ST86%28120k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-Thun-Nam-Ma-Bu-Basic-TE32%28165k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-Thun-Nam-Ma-Bu-Basic-TNA22%28225k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-Thun-Nam-Ma-Bu-Basic-TNAE33%28185k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-Thun-Nam-Ma-Bu-Basic-TNAE41%28165k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-Thun-Nam-Ma-Bu-Basic-TNAE71%28225k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-Thun-Nam-Ma-Bu-Co-Tru-G01%28165k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-Thun-Nam-MaBu-Basic-TNS27%28185k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-Thun-Nam-No-Style-Co-Tru-ST07%28165k%29.jpg" />
+    <Content Include="images\nam\ao\Ao-Thun-Polo-Nam-CoBe-T709%28170k%29.jpg" />
+    <Content Include="images\nam\ao\AoThun-Polo-Nam-Ngan-Tay-B&amp;WT724%28160k%29.jpg" />
+    <Content Include="images\nam\balo\1.jpg" />
+    <Content Include="images\nam\balo\2.jpg" />
+    <Content Include="images\nam\quan\jean-126%28520k%29.jpg" />
+    <Content Include="images\nam\quan\jean-129%28520k%29.jpg" />
+    <Content Include="images\nam\quan\Jogger-Kaki-DenJ06%28225k%29.jpg" />
+    <Content Include="images\nam\quan\qt63%28420k%29.jpg" />
+    <Content Include="images\nam\quan\Quan-Kaki-Den-QK172%28225k%29.jpg" />
+    <Content Include="images\nam\quan\Quan-short-kaki-lung-thun-QSK-407%28160k%29.jpg" />
+    <Content Include="images\nam\quan\Quan-short-kaki-lung-thun-QSK-408%28160k%29.jpg" />
+    <Content Include="images\nam\quan\Quan-Short-Linen-Den-QS189%28225k%29.jpg" />
+    <Content Include="images\nam\quan\quandai\Quan-Jean-Nam-Ma-Bu-Dai-K46%28385k%29.jpg" />
+    <Content Include="images\nam\quan\quandai\Quan-Jean-Nam-Ma-Bu-Dai-K52%28425k%29.jpg" />
+    <Content Include="images\nam\quan\quandai\Quan-Jean-Nam-Ma-Bu-Dai-K61%28425k%29.jpg" />
+    <Content Include="images\nam\quan\quandai\Quan-Jean-Nam-Ma-Bu-Dai-K65%28385k%29.jpg" />
+    <Content Include="images\nam\quan\quandai\Quan-Jean-Nam-Ma-Bu-Dai-K71%28385k%29.jpg" />
+    <Content Include="images\nam\quan\quandai\Quan-Jean-Nam-Ma-Bu-Dai-K74%28385k%29.jpg" />
+    <Content Include="images\nam\quan\quandai\Quan-Jean-Nam-Ma-Bu-Dai-K75%28385k%29.jpg" />
+    <Content Include="images\nam\quan\quandai\Quan-Jean-Nam-Ma-Bu-Dai-K92%28385k%29.jpg" />
+    <Content Include="images\nam\quan\quandai\Quan-Jogger-Nam-Ma-Bu-Thun-AA02%28255k%29.jpg" />
+    <Content Include="images\nam\quan\quandai\Quan-jogger-Nam-Ma-Bu-Thun-S02%28255k%29.jpg" />
+    <Content Include="images\nam\quan\quandai\Quan-Jogger-Nam-Ma-Bu-Thun-ST03%28185k%29.jpg" />
+    <Content Include="images\nam\quan\quandai\Quan-Jogger-Nam-Ma-Bu-Thun-ST06%28185k%29.jpg" />
+    <Content Include="images\nam\quan\quandai\Quan-Jogger-Nam-Ma-Bu-Thun-W02%28285k%29.jpg" />
+    <Content Include="images\nam\quan\quandai\Quan-Jogger-Nam-Ma-Bu-Thun-X01%28255k%29.jpg" />
+    <Content Include="images\nam\quan\quandai\Quan-Jogger-Nam-Ma-Bu-Thun-Y03%28255k%29.jpg" />
+    <Content Include="images\nam\quan\quandai\Quan-Kaki-Nam-No-Style-Dai-%28285k%29.jpg" />
+    <Content Include="images\nam\quan\quandai\Quan-Kaki-Nam-No-Style-Dai-H01%28285k%29.jpg" />
+    <Content Include="images\nam\quan\quandai\Quan-Tay-Nam-No-Style-Dai-A11%28425k%29.jpg" />
+    <Content Include="images\nam\quan\quandai\Quan-Tay-Nam-No-Style-Dai-FL01%28399k%29.jpg" />
+    <Content Include="images\nam\quan\quandai\Quan-Tay-Nam-No-Style-Dai-X03%28425k%29.jpg" />
+    <Content Include="images\nam\quan\quanshort\Quan-Jean-Nam-Ma-Bu-Sooc-A49%28255k%29.jpg" />
+    <Content Include="images\nam\quan\quanshort\Quan-Jean-Nam-Ma-Bu-Sooc-A51%28285k%29.jpg" />
+    <Content Include="images\nam\quan\quanshort\Quan-Jean-Nam-Ma-Bu-Sooc-Y32%28295k%29.jpg" />
+    <Content Include="images\nam\quan\quanshort\Quan-Kaki-Nam-Ma-Bu-Sooc-G01%28185k%29.jpg" />
+    <Content Include="images\nam\quan\quanshort\Quan-Kaki-Nam-Ma-Bu-Sooc-M02%28225k%29.jpg" />
+    <Content Include="images\nam\quan\quanshort\Quan-Kaki-Nam-Ma-Bu-Sooc-O02%28225k%29.jpg" />
+    <Content Include="images\nam\quan\quanshort\Quan-Kaki-Nam-Ma-Bu-Sooc-O04%28225k%29.jpg" />
+    <Content Include="images\nam\quan\quanshort\Quan-Kaki-Nam-Ma-Bu-Sooc-ST02%28185k%29.jpg" />
+    <Content Include="images\nam\quan\quanshort\Quan-Kaki-Nam-Ma-Bu-Sooc-ST05%28225%29.jpg" />
+    <Content Include="images\nam\quan\quanshort\Quan-Kaki-Nam-Ma-Bu-Sooc-ST07%28225k%29.jpg" />
+    <Content Include="images\nam\quan\quanshort\Quan-Kaki-Nam-Ma-Bu-Sooc-Y02%28255k%29.jpg" />
+    <Content Include="images\nam\quan\quanshort\Quan-Kaki-Nam-No-Style-Sooc-C04%28255k%29.jpg" />
+    <Content Include="images\nam\quan\quanshort\Quan-Kaki-Nam-No-Style-Sooc-KM01%28255k%29.jpg" />
+    <Content Include="images\nam\quan\quanshort\Quan-Sooc-Nam-Ma-Bu-S01%28165k%29.jpg" />
+    <Content Include="images\nam\quan\quanshort\Quan-Thun-Nam-Ma-Bu-Sooc-ST08%28165k%29.jpg" />
+    <Content Include="images\nam\quan\quanshort\Quan-Thun-Nam-Ma-Bu-Sooc-ST15%28165k%29.jpg" />
+    <Content Include="images\nam\quan\quanshort\Quan-Thun-Nam-Ma-Bu-Sooc-ST16%28165k%29.jpg" />
+    <Content Include="images\nam\quan\quanshort\Quan-Thun-Nam-Ma-Bu-Sooc-X01%28185k%29.jpg" />
+    <Content Include="images\nam\quan\quanshort\Quan-Thun-Nam-Ma-Bu-Sooc-Y03%28195k%29.jpg" />
+    <Content Include="images\nam\quan\quanshort\Quan-Thun-Nam-No-Style-Sooc-E02%28185k%29.jpg" />
+    <Content Include="images\phukien\mu\ANTI-SOCIAL-SOCIAL-CLUB-CAP-IN-WHITE-NK350%28100k%29.jpg" />
+    <Content Include="images\phukien\mu\CAP-IN-WHITE-NK362%28100k%29.jpg" />
+    <Content Include="images\phukien\mu\CONVERSE-CAP-IN-RED-NK353%28100k%29.jpg" />
+    <Content Include="images\phukien\mu\DICKIES-CAP-IN-WHITE-NK348%28100k%29.jpg" />
+    <Content Include="images\phukien\mu\FILA-CAP-IN-BLACK-NK345%28100k%29.jpg" />
+    <Content Include="images\phukien\mu\FILA-CAP-IN-WHITE-NK346%28100k%29.jpg" />
+    <Content Include="images\phukien\mu\JORDAN-CAP-IN-BLACK-NK373%28100k%29.jpg" />
+    <Content Include="images\phukien\mu\LACOSTE-CAP-IN-GREEN-NK376%28100k%29.jpg" />
+    <Content Include="images\phukien\mu\MONLER-CAP-IN-BLUE-NK358%28100k%29.jpg" />
+    <Content Include="images\phukien\mu\NFL-CAP-IN-GREEN-NK379%28100k%29.jpg" />
+    <Content Include="images\phukien\mu\NY-CAP-IN-WHITE-NK344%28100k%29.jpg" />
+    <Content Include="images\phukien\mu\OLYMPIC-CAP-IN-BLACK-NK38%28100k%29.jpg" />
+    <Content Include="images\phukien\mu\OLYMPIC-CAP-IN-BLACK-NK386%28100k%29.jpg" />
+    <Content Include="images\phukien\mu\OLYMPIC-CAP-IN-WHITE-NK385%28100k%29.jpg" />
+    <Content Include="images\phukien\mu\OLYMPIC-CAP-IN-WHITE-NK387%28100k%29.jpg" />
+    <Content Include="images\phukien\mu\POLO-CAP-IN-ORANGE-NK368%28100k%29.jpg" />
+    <Content Include="images\phukien\mu\REDSKINS-CAP-IN-GREEN-NK372.jpg" />
+    <Content Include="images\phukien\mu\RODEO-CAP-IN-BLACK-NK380%28100k%29.jpg" />
+    <Content Include="images\phukien\mu\RODEO-CAP-IN-RED-NK381%28100k%29.jpg" />
+    <Content Include="images\phukien\mu\THE-NORTH-FACE-CAP-IN-RED-NK378%28100k%29.jpg" />
+    <Content Include="images\phukien\tat\23-SHOES-SOCK-IN-RED-TA745%2840k%29.jpg" />
+    <Content Include="images\phukien\tat\COW-PRINT-SHOES-SOCK-IN-CREAM-TA742%2850k%29.jpg" />
+    <Content Include="images\phukien\tat\JOPANA-SHOES-SOCK-IN-BLACK-TA730%2860k%29.jpg" />
+    <Content Include="images\phukien\tat\KEEP-REAL-SHOES-SOCK-IN-BLACK-TA739%2855k%29.jpg" />
+    <Content Include="images\phukien\tat\MOOD-MOOD-SHOES-SOCK-IN-BLACK-TA743%2840k%29.jpg" />
+    <Content Include="images\phukien\tat\OFF-WHITE-SHOES-SOCK-IN-BLACK-TA734%2860k%29.jpg" />
+    <Content Include="images\phukien\tat\OFF-WHITE-SHOES-SOCK-IN-BLACK-TA736%2870k%29.jpg" />
+    <Content Include="images\phukien\tat\OFF-WHITE-SHOES-SOCK-IN-BLACK-TA737%2870k%29.jpg" />
+    <Content Include="images\phukien\tat\OFF-WHITE-SHOES-SOCK-IN-BLACK-TA740%2855k%29.jpg" />
+    <Content Include="images\phukien\tat\OFF-WHITE-SHOES-SOCK-IN-RED-TA718%2860k%29.jpg" />
+    <Content Include="images\phukien\tat\OFF-WHITE-SHOES-SOCK-IN-WHITE-TA733%2860k%29.jpg" />
+    <Content Include="images\phukien\tat\SHOES-SOCK-IN-GEY-TA728%2865k%29.jpg" />
+    <Content Include="images\phukien\tat\SHOES-SOCK-IN-PURPLE-TA727%2865k%29.jpg" />
+    <Content Include="images\phukien\tat\SMIL-SHOES-SOCK-IN-GREEN-TA725%2835k%29.jpg" />
+    <Content Include="images\phukien\tat\SMIL-SHOES-SOCK-IN-GREY-TA724%2835k%29.jpg" />
+    <Content Include="images\phukien\tat\SMIL-SHOES-SOCK-IN-RED-TA726%2835k%29.jpg" />
+    <Content Include="images\phukien\tat\SOUL-TRAIN-SHOES-SOCK-IN-GREEN-TA731%2860k%29.jpg" />
+    <Content Include="images\phukien\tat\STRIPE-SHOES-SOCK-IN-GREEN-TA721%2860k%29.jpg" />
+    <Content Include="images\phukien\tat\STUSSY-SHOES-SOCK-IN-BLACK-TA719%2860k%29.jpg" />
+    <Content Include="images\phukien\tat\STUSSY-SHOES-SOCK-IN-WHITE-TA720%2860k%29.jpg" />
+    <Content Include="images\phukien\vongtay\BRACELETS-VS205%2850k%29.jpg" />
+    <Content Include="images\phukien\vongtay\BRACELETS-VS206%2850k%29.jpg" />
+    <Content Include="images\phukien\vongtay\BRACELETS-VS208%2860k%29.jpg" />
+    <Content Include="images\phukien\vongtay\BROCADE-BRACELETS-IN-BLACK-VS225%2850k%29.jpg" />
+    <Content Include="images\phukien\vongtay\BROCADE-BRACELETS-IN-BROWN-VS224%2850k%29.jpg" />
+    <Content Include="images\phukien\vongtay\SHAMBALLA-BRACELETS-VS098%2860k%29.jpg" />
+    <Content Include="images\phukien\vongtay\SHAMBALLA-BRACELETS-VS100%2860k%29.jpg" />
+    <Content Include="images\phukien\vongtay\SHAMBALLA-BRACELETS-VS101%2860k%29.jpg" />
+    <Content Include="images\phukien\vongtay\SHAMBALLA-BRACELETS-VS103%2860k%29.jpg" />
+    <Content Include="images\phukien\vongtay\SHAMBALLA-BRACELETS-VS104%2860k%29.jpg" />
+    <Content Include="images\phukien\vongtay\SHAMBALLA-BRACELETS-VS105%2860k%29.jpg" />
+    <Content Include="images\phukien\vongtay\SHAMBALLA-BRACELETS-VS106%2860k%29.jpg" />
+    <Content Include="images\phukien\vongtay\SHAMBALLA-BRACELETS-VS107%2860k%29.jpg" />
+    <Content Include="images\phukien\vongtay\SHAMBALLA-BRACELETS-VS108%2860k%29.jpg" />
+    <Content Include="images\phukien\vongtay\SHAMBALLA-BRACELETS-VS11%2860k%29.jpg" />
+    <Content Include="images\phukien\vongtay\SHAMBALLA-BRACELETS-VS110%2860k%29.jpg" />
+    <Content Include="images\phukien\vongtay\SILICONE-BRACELET-IN-BLACK-VS222%2850k%29.jpg" />
+    <Content Include="images\phukien\vongtay\SUPREME-SILICONE-RUBBER-BRACELET-IN-BLACK-VS217%2860k%29.jpg" />
+    <Content Include="images\phukien\vongtay\SUPREME-SILICONE-RUBBER-BRACELET-IN-RED-VS219%2860k%29.jpg" />
+    <Content Include="images\phukien\vongtay\SUPREME-SILICONE-RUBBER-BRACELET-IN-WHITE-VS218%2860k%29.jpg" />
+    <Content Include="images\promo\1.jpg" />
+    <Content Include="images\promo\2.jpg" />
+    <Content Include="images\promo\3.jpg" />
+    <Content Include="images\promo\4.jpg" />
+    <Content Include="images\promo\5.jpg" />
+    <Content Include="images\promo\6.jpg" />
+    <Content Include="images\promo\7.jpg" />
+    <Content Include="images\promo\8.png" />
+    <Content Include="images\promo\9.gif" />
+    <Content Include="images\promo\AT406-210-2.jpg" />
+    <Content Include="images\promo\CV3672-280x380.jpg" />
+    <Content Include="images\slide\1.jpg" />
+    <Content Include="images\slide\2.jpg" />
+    <Content Include="images\slide\2.png" />
+    <Content Include="images\slide\3.jpg" />
+    <Content Include="images\tat\23-SHOES-SOCK-IN-RED-TA745%2840k%29.jpg" />
+    <Content Include="images\tat\COW-PRINT-SHOES-SOCK-IN-CREAM-TA742%2850k%29.jpg" />
+    <Content Include="images\tat\JOPANA-SHOES-SOCK-IN-BLACK-TA730%2860k%29.jpg" />
+    <Content Include="images\tat\KEEP-REAL-SHOES-SOCK-IN-BLACK-TA739%2855k%29.jpg" />
+    <Content Include="images\tat\MOOD-MOOD-SHOES-SOCK-IN-BLACK-TA743%2840k%29.jpg" />
+    <Content Include="images\tat\OFF-WHITE-SHOES-SOCK-IN-BLACK-TA734%2860k%29.jpg" />
+    <Content Include="images\tat\OFF-WHITE-SHOES-SOCK-IN-BLACK-TA736%2870k%29.jpg" />
+    <Content Include="images\tat\OFF-WHITE-SHOES-SOCK-IN-BLACK-TA737%2870k%29.jpg" />
+    <Content Include="images\tat\OFF-WHITE-SHOES-SOCK-IN-BLACK-TA740%2855k%29.jpg" />
+    <Content Include="images\tat\OFF-WHITE-SHOES-SOCK-IN-RED-TA718%2860k%29.jpg" />
+    <Content Include="images\tat\OFF-WHITE-SHOES-SOCK-IN-WHITE-TA733%2860k%29.jpg" />
+    <Content Include="images\tat\SHOES-SOCK-IN-GEY-TA728%2865k%29.jpg" />
+    <Content Include="images\tat\SHOES-SOCK-IN-PURPLE-TA727%2865k%29.jpg" />
+    <Content Include="images\tat\SMIL-SHOES-SOCK-IN-GREEN-TA725%2835k%29.jpg" />
+    <Content Include="images\tat\SMIL-SHOES-SOCK-IN-GREY-TA724%2835k%29.jpg" />
+    <Content Include="images\tat\SMIL-SHOES-SOCK-IN-RED-TA726%2835k%29.jpg" />
+    <Content Include="images\tat\SOUL-TRAIN-SHOES-SOCK-IN-GREEN-TA731%2860k%29.jpg" />
+    <Content Include="images\tat\STRIPE-SHOES-SOCK-IN-GREEN-TA721%2860k%29.jpg" />
+    <Content Include="images\tat\STUSSY-SHOES-SOCK-IN-BLACK-TA719%2860k%29.jpg" />
+    <Content Include="images\tat\STUSSY-SHOES-SOCK-IN-WHITE-TA720%2860k%29.jpg" />
+    <Content Include="images\treem\quanaobetr\Bo-sat-nach-the-thao-Bull- BTB20128%28122k%29.jpg" />
+    <Content Include="images\treem\quanaobetr\Bo-thun-co-tru-phoi-bo-FENDI-BTB20391%28145k%29.jpg" />
+    <Content Include="images\treem\quanaobetr\Bo-thun-gucci-theu-ong-BTB20375%28129k%29.jpg" />
+    <Content Include="images\treem\quanaobetr\Bo-thun-tay-raplang-the-thao-BTB20383%28129k%29.jpg" />
+    <Content Include="images\treem\quanaobetr\Bothun-in-hoat-hinh-BTB20250%28135k%29.jpg" />
+    <Content Include="images\treem\quanaobetr\Set-boi-nguoi-nhen-BTB20381%28149k%29.jpg" />
+    <Content Include="images\treem\quanaobetr\[SIZBo-thun-tay-raplang-the-thao-BTB20385%28139k%29.jpg" />
+    <Content Include="images\treem\quanao\BOBEOHONG%28135k%29.jpg" />
+    <Content Include="images\treem\quanao\bobuberryden%28129k%29.jpg" />
+    <Content Include="images\treem\quanao\bobuberrytrang%28139k%29.jpg" />
+    <Content Include="images\treem\quanao\BOBULL23TRANG%28122k%29.jpg" />
+    <Content Include="images\treem\quanao\BOGUCCITRANG1%28122k%29.jpg" />
+    <Content Include="images\treem\quanao\boheocopkimsaden%28139k%29.jpg" />
+    <Content Include="images\treem\quanao\boheocopkimsavang%28129k%29.jpg" />
+    <Content Include="images\treem\quanao\BOJUMHOA4%28145k%29.jpg" />
+    <Content Include="images\treem\quanao\bomeokimsavang%28129k%29.jpg" />
+    <Content Include="images\treem\quanao\BOMEOvang%28129k%29.jpg" />
+    <Content Include="images\treem\quanao\BONUOCNGOTGAI5%28135k%29.jpg" />
+    <Content Include="images\treem\quanao\botronlogodo%28110k%29.jpg" />
+    <Content Include="images\treem\quanao\BOVOAN3DCOGAIDO1%28155k%29.jpg" />
+    <Content Include="images\treem\quanao\SET3MONADDIASTRANG%28165k%29.jpg" />
+    <Content Include="images\treem\quanao\setcropfenditrang%28159k%29.jpg" />
+    <Content Include="images\treem\quanao\setdaysatnachcam%28155k%29.jpg" />
+    <Content Include="images\treem\quanao\setkimsavitdo%28139k%29.jpg" />
+    <Content Include="images\treem\quanao\setmeolazervang%28149k%29.jpg" />
+    <Content Include="images\treem\quanao\setnoxetaden%28159k%29.jpg" />
+    <Content Include="images\treem\quanao\setyemjeasnfendiden1%28185k%29.jpg" />
+    <Content Include="images\vongtay\BRACELETS-VS205%2850k%29.jpg" />
+    <Content Include="images\vongtay\BRACELETS-VS206%2850k%29.jpg" />
+    <Content Include="images\vongtay\BRACELETS-VS208%2860k%29.jpg" />
+    <Content Include="images\vongtay\BROCADE-BRACELETS-IN-BLACK-VS225%2850k%29.jpg" />
+    <Content Include="images\vongtay\BROCADE-BRACELETS-IN-BROWN-VS224%2850k%29.jpg" />
+    <Content Include="images\vongtay\SHAMBALLA-BRACELETS-VS098%2860k%29.jpg" />
+    <Content Include="images\vongtay\SHAMBALLA-BRACELETS-VS100%2860k%29.jpg" />
+    <Content Include="images\vongtay\SHAMBALLA-BRACELETS-VS101%2860k%29.jpg" />
+    <Content Include="images\vongtay\SHAMBALLA-BRACELETS-VS103%2860k%29.jpg" />
+    <Content Include="images\vongtay\SHAMBALLA-BRACELETS-VS104%2860k%29.jpg" />
+    <Content Include="images\vongtay\SHAMBALLA-BRACELETS-VS105%2860k%29.jpg" />
+    <Content Include="images\vongtay\SHAMBALLA-BRACELETS-VS106%2860k%29.jpg" />
+    <Content Include="images\vongtay\SHAMBALLA-BRACELETS-VS107%2860k%29.jpg" />
+    <Content Include="images\vongtay\SHAMBALLA-BRACELETS-VS108%2860k%29.jpg" />
+    <Content Include="images\vongtay\SHAMBALLA-BRACELETS-VS11%2860k%29.jpg" />
+    <Content Include="images\vongtay\SHAMBALLA-BRACELETS-VS110%2860k%29.jpg" />
+    <Content Include="images\vongtay\SILICONE-BRACELET-IN-BLACK-VS222%2850k%29.jpg" />
+    <Content Include="images\vongtay\SUPREME-SILICONE-RUBBER-BRACELET-IN-BLACK-VS217%2860k%29.jpg" />
+    <Content Include="images\vongtay\SUPREME-SILICONE-RUBBER-BRACELET-IN-RED-VS219%2860k%29.jpg" />
+    <Content Include="images\vongtay\SUPREME-SILICONE-RUBBER-BRACELET-IN-WHITE-VS218%2860k%29.jpg" />
+    <Content Include="images\women\girl-1.png" />
+    <Content Include="images\women\girl-2.png" />
+    <Content Include="images\women\girl-3.png" />
+    <Content Include="images\women\girl-4.png" />
+    <Content Include="images\women\girl-5.png" />
+    <Content Include="images\women\girl-6.png" />
+    <Content Include="images\women\girl-7.png" />
+    <Content Include="js\all.js" />
+    <Content Include="js\all.min.js" />
+    <Content Include="js\bootstrap.bundle.js" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\favoritecustom.js" />
+    <Content Include="js\fontawesome.js" />
+    <Content Include="js\fontawesome.min.js" />
+    <Content Include="js\jquery-3.4.0.min.js" />
+    <Content Include="js\shoppingCartCustom.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\style.scss" />
+    <Content Include="css\_responsive.scss" />
+    <Content Include="images\banner\2.webp" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\nu\aodai\" />
+    <Folder Include="images\nu\doboi\" />
+    <Folder Include="images\nu\vay\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50162</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44382/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

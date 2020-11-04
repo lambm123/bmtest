@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hoàng Phú shop</title>
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <!-- start loading -->
+    <div class="box-loadding2">
+        <div class="preloader"></div>
+        <p>Loadding</p>
+    </div>
+    <!-- end loading -->
+
+
+    <!-- start header -->
+    <header class="hp-header" id="hp-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="hp-header-top">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="hp-header-top-area">
+                                        <div class="hp-header-top-right">
+                                            <ul class="hp-head-top-nav-right">
+                                                <li class="hidden-xs"><a href="./favorite.html">Wishlist</a></li>
+                                                <li class="hidden-xs"><a href="./shoppingCart.html">My Cart</a></li>
+                                                <li class="hidden-xs"><a href="#"><span class="fa fa-phone"></span> 0961737100</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <nav class="navbar navbar-expand-md navbar-light bg-light" id="header-nav">
+                        <a class="navbar-brand" href="#"><img src="../Images/logohoangphu.png" alt=""
+                                class="img-responsive"></a>
+                        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                            data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse hp-header-search ml-auto" id="collapsibleNavId">
+                            <div id="form-inline-top" class="form-inline my-2 my-lg-0 ml-auto">
+                                <button class="btn btn-outline-danger mr-sm-2" data-toggle="modal"
+                                    data-target="#modalLogIn">Đăng nhập</button>
+                                <div class="modal fade" id="modalLogIn" data-backdrop="false">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4>Đăng nhập</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                            <form id="hp-form-login">
+                                                                <div class="form-group row">
+                                                                    <label for="email" class="col-md-4 offset-2">Tên đăng nhập</label>
+                                                                    <div class="col-md-6">
+                                                                        <input type="email" id="form-input-email-dn" class="form-control"
+                                                                            id="exampleInputEmail1"
+                                                                            aria-describedby="emailHelp"
+                                                                            placeholder="Nhập tên đăn nhập">
+                                                                        <span id="er4" style="color:red"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <label for="exampleInputPassword1"
+                                                                        class="col-md-4 offset-2">Mật khẩu</label>
+                                                                    <div class="col-md-6">
+                                                                        <input type="password" id="form-input-password-dn" class="form-control"
+                                                                            id="exampleInputPassword1"
+                                                                            placeholder="Nhập mật kh">
+                                                                        <span id="er5" style="color:red"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-check row">
+                                                                    <div class="col-md-1 offset-md-2">
+                                                                        <input type="checkbox" class="form-check-input"
+                                                                            id="exampleCheck1">
+                                                                    </div>
+                                                                    <label class="form-check-label"
+                                                                        style="text-align : left" for="exampleCheck1">Ghi
+                                                                        nhớ</label>
+                                                                </div>
+                                                                <div class="row">
+                                                                    
+                                                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                                        <p id="confirm-form-dn"></p>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                                <a type="button" id="form-input-dn" class="btn btn-primary">Đăng nhập</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-outline-success my-2 my-sm-0" href="./account.html">Đăng ký</a>
+                            </div>
+                            <div class="header-shopping-card mr-3 ml-auto">
+                                <i class="fas fa-heart"></i>
+                                <p data-toggle="modal" data-target="modal-cart">Yêu Thích <span class="badge badge-danger"
+                                        id="favorite-tag">0</span></p>
+                                <div class="modal" id="modal-cart" role="dialog" data-backdrop="false">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div id="box-favorite"
+                                                            class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer" id="box-footer-modal">
+                                                <a href="./favorite.html" class="">Xem tất cả</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-shopping-card">
+                                <i class="fas fa-shopping-cart"></i>
+                                <!-- <i><img src="./shopping-cart-solid.svg" alt=""></i> -->
+                                <p>Giỏ Hàng <span class="badge badge-info" id="shoppingCart-tag">0</span></p>
+                                <div class="modal" id="modal-cart" role="dialog" data-backdrop="false">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div id="box-shopping-cart"
+                                                            class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer" id="box-footer-modal">
+                                                <a href="./shoppingCart.html" class="">Xem tất cả </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start nav menu -->
+    <section class="hp-nav" id="hp-nav">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <ul class="nav justify-content-center" id="nav-menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productman.html">MAN</a>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productwoman.html">WOMAN</a>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productkid.html">KID</a>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productsport.html">ACCESSORIES</a>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactUs.html">CONTACT US</a>
+                            </a>
+                        </li><li class="nav-item">
+                            <a class="nav-link" href="./aboutUs.html">ABOUT US</a>
+                            </a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end nav menu -->
+
+    <!-- start slide -->
+    <section class="hp-slide">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div id="carouselId" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselId" data-slide-to="1"></li>
+                            <li data-target="#carouselId" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img class="img-responsive" src="../Images/slide/1.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-responsive" src="../Images/slide/2.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-responsive" src="../Images/slide/3.jpg" alt="Third slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end slide -->
+
+    <!-- start promo -->
+    <section class="hp-promo">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="row">
+                        <!-- promo left -->
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="promo-left">
+                                <div class="promo-left-opacity"></div>
+                                <div class="promo-left-content">75% Off</div>
+                                <img src="../Images/promo/7.jpg" alt="1" class="img-responsive" />
+                            </div>
+                        </div>
+                        <!-- promo right -->
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="row box-promo-righ">
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                    <div class="promo-right">
+                                        <div class="promo-right-opacity"></div>
+                                        <div class="promo-right-content">25% Off</div>
+                                        <img src="../Images/promo/6.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                    <div class="promo-right">
+                                        <div class="promo-right-opacity"></div>
+                                        <div class="promo-right-content">Sale Off</div>
+                                        <img src="../Images/promo/AT406-210-2.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row box-promo-righ">
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                    <div class="promo-right">
+                                        <div class="promo-right-opacity"></div>
+                                        <div class="promo-right-content">New Arrivals</div>
+                                        <img src="../Images/promo/9.gif" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                    <div class="promo-right">
+                                        <div class="promo-right-opacity"></div>
+                                        <div class="promo-right-content">75% Off</div>
+                                        <img src="../Images/promo/3.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end promo -->
+
+    <!-- start product -->
+    <section class="hp-products" id="hp-products">
+        <div class="container">
+            <!-- popular catogorie -->
+            <div class="popular-cato row" id="popular-cato">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link activeFilter" href="#">Popular</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Featured</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Latest</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="card card-effect2 boxFilterPopular">
+                        <div class="card-img-top">
+                            <img src="../Images/nam/ao/Ao-Thun-Nam-Ma-Bu-Basic-CA01(185k).jpg" alt="">
+                            <div class="img-badge badge-custom-2">
+                                <p>HOT</p>
+                                <div class="img-badge-custom badge-custom-2"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top"
+                                    title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Áo Thun MaBu Basic CA01" value="185000 VND"
+                                        src="../Images/nam/ao/Ao-Thun-Nam-Ma-Bu-Basic-CA01(185k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Áo Thun MaBu Basic CA01" value="185000 VND" src="../Images/nam/ao/Ao-Thun-Nam-Ma-Bu-Basic-CA01(185k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">185000 VND</h5>
+                            <p class="card-text">Áo Thun MaBu Basic CA01</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect2 boxFilterPopular">
+                        <div class="card-img-top">
+                            <img src="../Images/nu/vay/ne29(290k).jpg" alt="">
+                            <div class="img-badge badge-custom-2">
+                                <p>SALE OFF</p>
+                                <div class="img-badge-custom badge-custom-2"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top"
+                                    title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="NE29" value="290000 VND"
+                                        src="../Images/nu/vay/ne29(290k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="NE29" value="290000 VND" src="../Images/nu/vay/ne29(290k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">290000 VND</h5>
+                            <p class="card-text">NE29</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect2 boxFilterPopular">
+                        <div class="card-img-top">
+                            <img src="../Images/phukien/mu/OLYMPIC-CAP-IN-BLACK-NK386(100k).jpg" alt="">
+                            <div class="img-badge badge-custom-2">
+                                <p>SOLD OUT</p>
+                                <div class="img-badge-custom badge-custom-2"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top"
+                                    title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Nón OLYMPIC CAP BLACK NK386" value="100000 VND"
+                                        src="../Images/phukien/mu/OLYMPIC-CAP-IN-BLACK-NK386(100k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Nón OLYMPIC CAP BLACK NK386" value="100000 VND" src="../Images/phukien/mu/OLYMPIC-CAP-IN-BLACK-NK386(100k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">100000 VND</h5>
+                            <p class="card-text">Nón OLYMPIC CAP BLACK NK386</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect2 boxFilterPopular">
+                        <div class="card-img-top">
+                            <img src="../Images/nam/quan/quan-dai/Quan-Tay-Nam-No-Style-Dai-A11(425k).jpg" alt="">
+                            <div class="img-badge badge-custom-2">
+                                <p>SALE OFF</p>
+                                <div class="img-badge-custom badge-custom-2"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top"
+                                    title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Quần Tây Nam A11" value="425000 VND"
+                                        src="../Images/nam/quan/quan-dai/Quan-Tay-Nam-No-Style-Dai-A11(425k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Quần Tây Nam A11" value="425000 VND" src="../Images/nam/quan/quan-dai/Quan-Tay-Nam-No-Style-Dai-A11(425k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">425000 VND</h5>
+                            <p class="card-text">Quần Tây Nam A11</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product panner -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <img src="../Images/banner/2.webp" alt="" class="product-banner img-responsive">
+                </div>
+            </div>
+            <!-- products man -->
+            <div class="product-man row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h3 class="section-title section-title-center">
+                        <b></b>
+                        <span class="section-title-main">MAN</span>
+                        <b></b>
+                    </h3>
+                </div>
+            </div>
+            <div class="scrollMan row" id="manBox">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="card card-effect boxFilterMan">
+                        <div class="card-img-top">
+                            <img src="../Images/nam/ao/Ao-Thun-Nam-No-Style-Co-Tru-ST07(165k).jpg" alt="">
+                            <div class="img-badge">
+                                <p>NEW</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top"
+                                    title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Áo thun Nam Cổ Trụ ST07" value="165000 VND" src="../Images/nam/ao/Ao-Thun-Nam-No-Style-Co-Tru-ST07(165k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Áo thun Nam Cổ Trụ ST07" value="165000 VND" src="../Images/nam/ao/Ao-Thun-Nam-No-Style-Co-Tru-ST07(165k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">165000 VND</h5>
+                            <p class="card-text">Áo thun Nam Cổ Trụ ST07</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterMan">
+                        <div class="card-img-top">
+                            <img src="../Images/nam/ao/Ao-Thun-Nam-Ma-Bu-Co-Tru-G01(165k).jpg" alt="">
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Áo thun Nam Ma Bư Cổ Trụ G01" value="165000 VND"
+                                        src="../Images/nam/ao/Ao-Thun-Nam-Ma-Bu-Co-Tru-G01(165k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Áo thun Nam Ma Bư Cổ Trụ G01" value="165000 VND"
+                                    src="../Images/nam/ao/Ao-Thun-Nam-Ma-Bu-Co-Tru-G01(165k).jpg"><i class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">165000 VND</h5>
+                            <p class="card-text">Áo thun Nam Ma Bư Cổ Trụ G01</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterMan">
+                        <div class="card-img-top">
+                            <img src="../Images/nam/ao/Ao-Thun-Nam-MaBu-Basic-TNS27(185k).jpg" alt="">
+                            <div class="img-badge">
+                                <p>SOLD OUT</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Áo thun Nam MaBu Basic TNs27" value="185000 VND"
+                                        src="../Images/nam/ao/Ao-Thun-Nam-MaBu-Basic-TNS27(185k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Áo thun Nam MaBu Basic TNs27" value="185000 VND"
+                                    src="../Images/nam/ao/Ao-Thun-Nam-MaBu-Basic-TNS27(185k).jpg"><i class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">185000 VND</h5>
+                            <p class="card-text">Áo thun Nam MaBu Basic TNs27</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterMan">
+                        <div class="card-img-top">
+                            <img src="../Images/nam/ao/Ao-Thun-Nam-Ma-Bu-Basic-TNAE71(225k).jpg" alt="">
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Áo Thun Nam MaBu TNAE71" value="225000 VND"
+                                        src="../Images/nam/ao/Ao-Thun-Nam-Ma-Bu-Basic-TNAE71(225k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Áo Thun Nam MaBu TNAE71" value="225000 VND"
+                                    src="../Images/nam/ao/Ao-Thun-Nam-Ma-Bu-Basic-TNAE71(225k).jpg"><i class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">225000 VND</h5>
+                            <p class="card-text">Áo Thun Nam MaBu TNAE71</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterMan">
+                        <div class="card-img-top">
+                            <img src="../Images/nam/quan/quan-short/Quan-Thun-Nam-Ma-Bu-Sooc-Y03(195k).jpg" alt="">
+                            <div class="img-badge">
+                                <p>SALE OFF</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Quần Thun Nam MaBu Sooc Y03" value="195000 VND"
+                                        src="../Images/nam/quan/quan-short/Quan-Thun-Nam-Ma-Bu-Sooc-Y03(195k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Quần Thun Nam MaBu Sooc Y03" value="195000 VND"
+                                    src="../Images/nam/quan/quan-short/Quan-Thun-Nam-Ma-Bu-Sooc-Y03(195k).jpg"><i class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">195000 VND</h5>
+                            <p class="card-text">Quần Thun Nam MaBu Sooc Y03</p>
+                        </div>
+                    </div>
+                   <div class="card card-effect boxFilterMan">
+                        <div class="card-img-top">
+                            <img src="../Images/nam/quan/quan-short/Quan-Thun-Nam-Ma-Bu-Sooc-X01(185k).jpg" alt="">
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Quần Thun Nam Sooc X01" value="185000 VND"
+                                        src="../Images/nam/quan/quan-short/Quan-Thun-Nam-Ma-Bu-Sooc-X01(185k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Quần Thun Nam Sooc X01" value="185000 VND"
+                                    src="../Images/nam/quan/quan-short/Quan-Thun-Nam-Ma-Bu-Sooc-X01(185k).jpg"><i class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">185000 VND</h5>
+                            <p class="card-text">Quần Thun Nam Sooc X01</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterMan">
+                        <div class="card-img-top">
+                            <img src="../Images/nam/quan/quan-dai/Quan-Tay-Nam-No-Style-Dai-FL01(399k).jpg" alt="">
+                            <div class="img-badge">
+                                <p>SALE OFF</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Quần Tây Nam Dài FL01" value="399000 VND"
+                                        src="../Images/nam/quan/quan-dai/Quan-Tay-Nam-No-Style-Dai-FL01(399k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Quần Tây Nam Dài FL01" value="399000 VND"
+                                    src="../Images/nam/quan/quan-dai/Quan-Tay-Nam-No-Style-Dai-FL01(399k).jpg"><i class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">399000 VND</h5>
+                            <p class="card-text">Quần Tây Nam Dài FL01</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterMan">
+                        <div class="card-img-top">
+                            <img src="../Images/nam/quan/quan-dai/Quan-Tay-Nam-No-Style-Dai-X03(425k).jpg" alt="">
+                            <div class="img-badge">
+                                <p>HOT</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Quần Tây Nam Dài X03" value="425000 VND"
+                                        src="../Images/nam/quan/quan-dai/Quan-Tay-Nam-No-Style-Dai-X03(425k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Quần Tây Nam Dài X03" value="425000 VND"
+                                    src="../Images/nam/quan/quan-dai/Quan-Tay-Nam-No-Style-Dai-X03(425k).jpg"><i class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">425000 VND</h5>
+                            <p class="card-text">Quần Tây Nam Dài X03</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- products woman -->
+            <div class="product-woman row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h3 class="section-title section-title-center">
+                        <b></b>
+                        <span class="section-title-main">WOMAN</span>
+                        <b></b>
+                    </h3>
+                </div>
+            </div>
+            <div class="scrollWoman row" id="manBox">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="card card-effect boxFilterWoman">
+                        <div class="card-img-top">
+                            <img src="../Images/nu/vay/oy21(385k).jpg" alt="">
+                            <div class="img-badge">
+                                <p>NEW</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top"
+                                    title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="OY21" value="385000 VND" src="../Images/nu/vay/oy21(385k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="OY21" value="385000 VND" src="../Images/nu/vay/oy21(385k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">385000 VND</h5>
+                            <p class="card-text">OY21</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterWoman">
+                        <div class="card-img-top">
+                            <img src="../Images/nu/vay/oy20(385k).jpg" alt="">
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="OY20" value="385000 VND"
+                                        src="../Images/nu/vay/oy20(385k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="OY20" value="385000 VND" src="../Images/nu/vay/oy20(385k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">385000 VND</h5>
+                            <p class="card-text">OY20</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterWoman">
+                        <div class="card-img-top">
+                            <img src="../Images/nu/vay/ot8(400k).jpg" alt="">
+                            <div class="img-badge">
+                                <p>HOT</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="OT8" value="400000 VND"
+                                        src="../Images/nu/vay/ot8(400k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="OT8" value="400000 VND" src="../Images/nu/vay/ot8(400k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">400000 VND</h5>
+                            <p class="card-text">OT8</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterWoman">
+                        <div class="card-img-top">
+                            <img src="../Images/nu/vay/os2(280k).jpg" alt="">
+                            <div class="img-badge">
+                                <p>SALE OFF</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="OS2" value="280000 VND"
+                                        src="../Images/nu/vay/os2(280k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="OS2" value="280000 VND" src="../Images/nu/vay/os2(280k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">280000 VND</h5>
+                            <p class="card-text">OS2</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterWoman">
+                        <div class="card-img-top">
+                            <img src="../Images/nu/aodai/Ao-dai-pastel(268k).jpg" alt="">
+                            <div class="img-badge">
+                                <p>NEW</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Áo dài pastel" value="268000 VND"
+                                        src="../Images/nu/aodai/Ao-dai-pastel(268k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Áo dài pastel" value="268000 VND" src="../Images/nu/aodai/Ao-dai-pastel(268k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">268000 VND</h5>
+                            <p class="card-text">Áo dài pastel</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterWoman">
+                        <div class="card-img-top">
+                            <img src="../Images/nu/aodai/Ao-dai-pastel(266k).jpg" alt="">
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Áo dài pastel" value="266000 VND"
+                                        src="../Images/nu/aodai/Ao-dai-pastel(266k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Áo dài pastel" value="266000 VND" src="../Images/nu/aodai/Ao-dai-pastel(266k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">266000 VND</h5>
+                            <p class="card-text">Áo dài pastel</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterWoman">
+                        <div class="card-img-top">
+                            <img src="../Images/nu/aodai/Ao-dai-pastel(260k).jpg" alt="">
+                            <div class="img-badge">
+                                <p>SOLD OUT</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Áo dài pastel" value="260000 VND"
+                                        src="../Images/nu/aodai/Ao-dai-pastel(260k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Áo dài pastel" value="260000 VND" src="../Images/nu/aodai/Ao-dai-pastel(260k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">260000 VND</h5>
+                            <p class="card-text">Áo dài pastel</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterWoman">
+                        <div class="card-img-top">
+                            <img src="../Images/nu/aodai/Ao-dai-pastel(115k).jpg" alt="">
+                            <div class="img-badge">
+                                <p>NEW</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Áo dài pastel" value="115000 VND"
+                                        src="../Images/nu/aodai/Ao-dai-pastel(115k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Áo dài pastel" value="115000 VND" src="../Images/nu/aodai/Ao-dai-pastel(115k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">115000 VND</h5>
+                            <p class="card-text">Áo dài pastel</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- product kid -->
+            <div class="product-kid row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h3 class="section-title section-title-center">
+                        <b></b>
+                        <span class="section-title-main">KID</span>
+                        <b></b>
+                    </h3>
+                </div>
+            </div>
+            <div class="scrollKid row" id="manBox">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="card card-effect boxFilterKid">
+                        <div class="card-img-top">
+                            <img src="../Images/treem/quan-ao/setyemjeasnfendiden1(185k).jpg" alt="">
+                            <div class="img-badge">
+                                <p>SALE OFF</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top"
+                                    title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Set yếm jean" value="185000 VND" src="../Images/treem/quan-ao/setyemjeasnfendiden1(185k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Set yếm jean" value="185000 VND" src="../Images/treem/quan-ao/setyemjeasnfendiden1(185k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">185000 VND</h5>
+                            <p class="card-text">Set yếm jean</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterKid">
+                        <div class="card-img-top">
+                            <img src="../Images/treem/quan-ao/setnoxetaden(159k).jpg"  alt="">
+                            <div class="img-badge">
+                                <p>NEW</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top"
+                                    title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Set Noxet" value="159000 VND" src="../Images/treem/quan-ao/setnoxetaden(159k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Set Noxet" value="159000 VND" src="../Images/treem/quan-ao/setnoxetaden(159k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">159000 VND</h5>
+                            <p class="card-text">Set Noxet</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterKid">
+                        <div class="card-img-top">
+                            <img src="../Images/treem/quan-ao/setmeolazervang(149k).jpg"  alt="">
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top"
+                                    title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Set mèo Lazer vàng" value="149000 VND" src="../Images/treem/quan-ao/setmeolazervang(149k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Set mèo Lazer vàng" value="149000 VND" src="../Images/treem/quan-ao/setmeolazervang(149k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">149000 VND</h5>
+                            <p class="card-text">Set mèo Lazer vàng</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterKid">
+                        <div class="card-img-top">
+                            <img src="../Images/treem/quan-ao/setkimsavitdo(139k).jpg"  alt="">
+                            <div class="img-badge">
+                                <p>SOLD OUT</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top"
+                                    title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Set KimSaVit" value="139000 VND" src="../Images/treem/quan-ao/setkimsavitdo(139k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Set KimSaVit" value="139000 VND" src="../Images/treem/quan-ao/setkimsavitdo(139k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">139000 VND</h5>
+                            <p class="card-text">Set KimSaVit</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterKid">
+                        <div class="card-img-top">
+                            <img src="../Images/treem/quan-ao/setdaysatnachcam(155k).jpg"  alt="">
+                            <div class="img-badge">
+                                <p>NEW</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top"
+                                    title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Set Dây Sát Nách" value="155000 VND" src="../Images/treem/quan-ao/setdaysatnachcam(155k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Set Dây Sát Nách" value="155000 VND" src="../Images/treem/quan-ao/setdaysatnachcam(155k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">155000 VND</h5>
+                            <p class="card-text">Set Dây Sát Nách</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterKid">
+                        <div class="card-img-top">
+                            <img src="../Images/treem/quan-ao/setcropfenditrang(159k).jpg"  alt="">
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top"
+                                    title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Set CropFend" value="159000 VND" src="../Images/treem/quan-ao/setcropfenditrang(159k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Set CropFend" value="159000 VND" src="../Images/treem/quan-ao/setcropfenditrang(159k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">159000 VND</h5>
+                            <p class="card-text">Set CropFend</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterKid">
+                        <div class="card-img-top">
+                            <img src="../Images/treem/quan-ao/SET3MONADDIASTRANG(165k).jpg"  alt="">
+                            <div class="img-badge">
+                                <p>HOT</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top"
+                                    title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Set 3Mon Addias" value="165000 VND" src="../Images/treem/quan-ao/SET3MONADDIASTRANG(165k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Set 3Mon Addias" value="165000 VND" src="../Images/treem/quan-ao/SET3MONADDIASTRANG(165k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">165000 VND</h5>
+                            <p class="card-text">Set 3Mon Addias</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterKid">
+                        <div class="card-img-top">
+                            <img src="../Images/treem/quan-ao/setnoxetaden(159k).jpg"  alt="">
+                            <div class="img-badge">
+                                <p>SALE OFF</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top"
+                                    title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Set Noxet" value="159000 VND" src="../Images/treem/quan-ao/setnoxetaden(159k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Set Noxet" value="159000 VND" src="../Images/treem/quan-ao/setnoxetaden(159k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">159000 VND</h5>
+                            <p class="card-text">Set Noxet</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- product sport -->
+            <div class="product-sport row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h3 class="section-title section-title-center">
+                        <b></b>
+                        <span class="section-title-main">ACCESSORIES</span>
+                        <b></b>
+                    </h3>
+                </div>
+            </div>
+            <div class="scrollSport row" id="manBox">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="card card-effect boxFilterSport">
+                        <div class="card-img-top">
+                            <img src="../Images/phukien/mu/THE-NORTH-FACE-CAP-IN-RED-NK378(100k).jpg" alt="">
+                            <div class="img-badge">
+                                <p>NEW</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top"
+                                    title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Mũ the north face" value="100000 VND" src="../Images/phukien/mu/THE-NORTH-FACE-CAP-IN-RED-NK378(100k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Mũ the north face" value="100000 VND" src="../Images/phukien/mu/THE-NORTH-FACE-CAP-IN-RED-NK378(100k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">100000 VND</h5>
+                            <p class="card-text">Mũ the north face</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterSport">
+                        <div class="card-img-top">
+                            <img src="../Images/phukien/mu/RODEO-CAP-IN-RED-NK381(100k).jpg" alt="">
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top"
+                                    title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Mũ rodeo red" value="100000 VND" src="../Images/phukien/mu/RODEO-CAP-IN-RED-NK381(100k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Mũ rodeo red" value="100000 VND" src="../Images/phukien/mu/RODEO-CAP-IN-RED-NK381(100k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">100000 VND</h5>
+                            <p class="card-text">Mũ rodeo red</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterSport">
+                        <div class="card-img-top">
+                            <img src="../Images/phukien/mu/RODEO-CAP-IN-BLACK-NK380(100k).jpg" alt="">
+                            <div class="img-badge">
+                                <p>SALE OFF</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top"
+                                    title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Mũ rodeo black" value="100000 VND" src="../Images/phukien/mu/RODEO-CAP-IN-BLACK-NK380(100k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Mũ rodeo black" value="100000 VND" src="../Images/phukien/mu/RODEO-CAP-IN-BLACK-NK380(100k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">100000 VND</h5>
+                            <p class="card-text">Mũ rodeo black</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterSport">
+                        <div class="card-img-top">
+                            <img src="../Images/phukien/mu/REDSKINS-CAP-IN-GREEN-NK372.jpg" alt="">
+                            <div class="img-badge">
+                                <p>HOT</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top"
+                                    title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Mũ redskins green" value="100000 VND" src="../Images/phukien/mu/REDSKINS-CAP-IN-GREEN-NK372.jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Mũ redskins green" value="100000 VND" src="../Images/phukien/mu/REDSKINS-CAP-IN-GREEN-NK372.jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">100000 VND</h5>
+                            <p class="card-text">Mũ redskins green</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterSport">
+                        <div class="card-img-top">
+                            <img src="../Images/phukien/vongtay/SUPREME-SILICONE-RUBBER-BRACELET-IN-WHITE-VS218(60k).jpg" alt="">
+                            <div class="img-badge">
+                                <p>NEW</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top"
+                                    title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Supreme silicone white" value="60000 VND" src="../Images/phukien/vongtay/SUPREME-SILICONE-RUBBER-BRACELET-IN-WHITE-VS218(60k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Supreme silicone white" value="60000 VND" src="../Images/phukien/vongtay/SUPREME-SILICONE-RUBBER-BRACELET-IN-WHITE-VS218(60k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">60000 VND</h5>
+                            <p class="card-text">Supreme silicone white</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterSport">
+                        <div class="card-img-top">
+                            <img src="../Images/phukien/vongtay/SUPREME-SILICONE-RUBBER-BRACELET-IN-RED-VS219(60k).jpg" alt="">
+                            <div class="img-badge">
+                                <p>SOLD OUT</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top"
+                                    title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Supreme silicone red" value="60000 VND" src="../Images/phukien/vongtay/SUPREME-SILICONE-RUBBER-BRACELET-IN-RED-VS219(60k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Supreme silicone red" value="60000 VND" src="../Images/phukien/vongtay/SUPREME-SILICONE-RUBBER-BRACELET-IN-RED-VS219(60k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">60000 VND</h5>
+                            <p class="card-text">Supreme silicone red</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterSport">
+                        <div class="card-img-top">
+                            <img src="../Images/phukien/tat/STUSSY-SHOES-SOCK-IN-WHITE-TA720(60k).jpg" alt="">
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top"
+                                    title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Stussy shoes sock white" value="60000 VND" src="../Images/phukien/tat/STUSSY-SHOES-SOCK-IN-WHITE-TA720(60k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Stussy shoes sock white" value="60000 VND" src="../Images/phukien/tat/STUSSY-SHOES-SOCK-IN-WHITE-TA720(60k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">60000 VND</h5>
+                            <p class="card-text">Stussy shoes sock white</p>
+                        </div>
+                    </div>
+                    <div class="card card-effect boxFilterSport">
+                        <div class="card-img-top">
+                            <img src="../Images/phukien/tat/STUSSY-SHOES-SOCK-IN-BLACK-TA719(60k).jpg" alt="">
+                            <div class="img-badge">
+                                <p>NEW</p>
+                                <div class="img-badge-custom"></div>
+                            </div>
+                            <div class="card-img-content-top">
+                                <div class="content-favorite" data-toggle="tooltip" data-placement="top"
+                                    title="Add to Wishlist">
+                                    <i class="far fa-heart addFavorite" name="Stussy shoes sock black" value="60000 VND" src="../Images/phukien/tat/STUSSY-SHOES-SOCK-IN-BLACK-TA719(60k).jpg"></i>
+                                </div>
+                            </div>
+                            <div class="card-img-content-bottom">
+                                <p class="addCart" name="Stussy shoes sock black" value="60000 VND" src="../Images/phukien/tat/STUSSY-SHOES-SOCK-IN-BLACK-TA719(60k).jpg"><i
+                                        class="fas fa-shopping-cart"></i> THEM VAO GIO</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">60000 VND</h5>
+                            <p class="card-text">Stussy shoes sock black</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end products -->
+
+    <!-- start support -->
+    <section class="hp-support">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="hp-support-single">
+                                    <span class="fa fa-truck"></span>
+                                    <h4>FREE SHIPPING</h4>
+                                    <P>Giao miễn phí cho khách hàng nằm trong phạm vi Thành phố Hồ Chí Minh.</P>
+                                </div>
+                            </div>
+                            <!-- single support -->
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="hp-support-single">
+                                    <span class="fa fa-clock"></span>
+                                    <h4>7 DAYS MONEY BACK</h4>
+                                    <P>Được hoàn tiền trong vòng 7 ngày cho khách hàng không ưng ý sản phẩm</P>
+                                </div>
+                            </div>
+                            <!-- single support -->
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="hp-support-single">
+                                    <span class="fa fa-phone"></span>
+                                    <h4>SUPPORT 24/7</h4>
+                                    <P>Luôn có người trực hỗ trợ bên đường dây nóng 24/24</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end support -->
+
+    <!-- start Subscribe -->
+    <section class="hp-subscribe">
+        <div class="container">
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="row text-center">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h3>Subscribe our newsletter </h3>
+                        <p>Subscribe để nhận những thông tin khuyễn mãi mới nhất !</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 offset-md-4">
+                        <form class="form-inline">
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Enter your email"
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-danger" type="button">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- / end subscribe -->
+
+    <!-- start footer -->
+    <footer class="hp-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="hp-footer-top-area">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="hp-footer-widget">
+                                    <h5>Hoàng Phú Shop</h5>
+                                    <ul class="hp-footer-nav">
+                                        <li><a href="./aboutUs.html">Giới thiệu</a></li>
+                                        <li><a href="./contactUs.html">Liên hệ</a></li>
+                                        <li><a href="#">Tuyển dụng</a></li>
+                                        <li><a href="#">Hệ thống cửa hàng</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="hp-footer-widget">
+                                    <div class="hp-footer-widget">
+                                        <h5>Hỗ trợ khách hàng</h5>
+                                        <ul class="hp-footer-nav">
+                                            <li><a href="#">Hưỡng dẫn mua hàng</a></li>
+                                            <li><a href="#">Hưỡng dẫn đổi trả hàng</a></li>
+                                            <li><a href="#">Câu hỏi thường gặp ?</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="hp-footer-widget">
+                                    <div class="hp-footer-widget">
+                                        <h5>Dịch vụ</h5>
+                                        <ul class="hp-footer-nav">
+                                            <li><a href="#">Discovery</a></li>
+                                            <li><a href="#">Tin tức</a></li>
+                                            <li><a href="#">Khuyễn mãi</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="hp-footer-widget">
+                                    <div class="hp-footer-widget">
+                                        <h5>Contact Us</h5>
+                                        <address>
+                                            <p> 12 Nguyễn Văn Bảo, Gò Vấp, Việt Nam</p>
+                                            <p><span class="fa fa-phone"></span> 0961737100</p>
+                                            <p><span class="fa fa-envelope"></span>hoangphustore@gmail.com</p>
+                                        </address>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <div class="scrollNav" id="scrollNav">
+        <ul class="list-group">
+            <li class="list-group-item">MAN</li>
+            <li class="list-group-item">WOMAN</li>
+            <li class="list-group-item">KID</li>
+            <li class="list-group-item">ACCESSORIES</li>
+        </ul>
+    </div>
+    <div id="scrollTop" class="scrollToTop">
+        <i class="fa fa-chevron-up"></i>
+    </div>
+    
+    <script src="../js/jquery-3.4.0.min.js" type="text/javascript"></script>
+    <script src="../js/fontawesome.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/all.js"></script>
+    <script src="../js/custom.js" type="text/javascript"></script>
+
+</body>
+
+</html>
